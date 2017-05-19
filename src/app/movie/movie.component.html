@@ -1,0 +1,22 @@
+<md-grid-list cols="4" rowHeight="1:2">
+  <div *ngFor="let movie of movies">
+    <md-grid-tile>
+      <md-card>
+        <md-card-header>
+          <!-- <div md-card-avatar></div> -->
+          <md-card-title>Title:<strong>{{ movie.Title }}</strong></md-card-title>
+          <md-card-title>Year:<strong>{{ movie.Year }}</strong></md-card-title>
+          <md-card-subtitle>Imdb Id:<strong>{{ movie.imdbID }}</strong></md-card-subtitle>
+        </md-card-header>
+        <img md-card-image class="poster" src="{{ movie.Poster }}" >
+        <md-card-actions>
+          <button md-button #like>LIKE<md-icon svgIcon="thumbs-up"></md-icon></button>
+          <button md-button #share>SHARE</button>
+        </md-card-actions>
+        <md-input-container class="example-full-width">
+          <input mdInput placeholder="give a description..">
+        </md-input-container>
+      </md-card>
+    </md-grid-tile>
+  </div>
+</md-grid-list>

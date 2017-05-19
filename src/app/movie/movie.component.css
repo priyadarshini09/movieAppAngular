@@ -1,0 +1,12 @@
+.poster{
+  width:200px;
+  padding:10px 10px 10px 10px;
+  height: 300px;
+}
+#like{
+  margin-left: 40px;
+}
+
+#share{
+  margin-left: 45px;
+}
